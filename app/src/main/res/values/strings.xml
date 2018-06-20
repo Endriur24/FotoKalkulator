@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FotoKalkulator</string>
+    <string name="textview">TextView</string>
+    <string name="odl_hiperfok">Odległość hiperfokalna</string>
+    <string name="dof">Głębia ostrości</string>
+    <string name="ev_recount">Przelicznik EV</string>
+    <string name="focal_eq">Przelicznik ogniskowych</string>
+</resources>

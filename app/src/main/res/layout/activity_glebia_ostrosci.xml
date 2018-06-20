@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Glebia_ostrosci">
+
+
+    <TextView
+        android:id="@+id/wynik_glebia_ostrosci"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cocIn"
+        android:layout_alignTop="@+id/textView27"
+        android:text="-----" />
+
+    <TextView
+        android:id="@+id/wynik_najblizszy_ostry"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cocIn"
+        android:layout_alignTop="@+id/textView25"
+        android:text="-----" />
+
+    <TextView
+        android:id="@+id/wynik_najdalszy_ostry"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cocIn"
+        android:layout_alignTop="@+id/textView23"
+        android:text="-----" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginBottom="68dp"
+        android:text="Głębia ostrości [cm] :" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginTop="218dp"
+        android:text="Odległość obiektu : " />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginBottom="154dp"
+        android:text="Najbliższy ostry [m] :" />
+
+    <EditText
+        android:id="@+id/odlegloscIn"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView26"
+        android:layout_alignStart="@+id/cocIn"
+        android:ems="10"
+        android:hint="3.25"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/przyslonaIn"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView21"
+        android:layout_alignStart="@+id/cocIn"
+        android:ems="10"
+        android:hint="2.8"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ogniskowaIn"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView22"
+        android:layout_alignStart="@+id/cocIn"
+        android:ems="10"
+        android:hint="50"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginBottom="110dp"
+        android:text="Najdalszy ostry [m] :" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginTop="169dp"
+        android:text="Ogniskowa :" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginTop="121dp"
+        android:text="Przysłona :" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Obliczanie głębi ostrości"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:text="Wielkość matrycy (coc) :" />
+
+    <EditText
+        android:id="@+id/cocIn"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:hint="0.018"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_przelicz"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="202dp"
+        android:text="PRZELICZ" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Odleglosc_hiperfokalna">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Obliczanie doległości hiperfokalnej"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/ogniskowaIn"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:hint="50"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ogniskowaIn"
+        android:layout_alignStart="@+id/textView"
+        android:text="Ogniskowa [mm]"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/przyslonaIn"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="133dp"
+        android:ems="10"
+        android:hint="2.8"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="143dp"
+        android:text="Przysłona (K:_)"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/oblicz_hiperfokalna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="OBLICZ"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:text="Odległość hiperfokalna wynosi:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ogniskowaIn"
+        android:layout_marginBottom="67dp"
+        android:text="[m]"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/wynikOutput"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/ogniskowaIn"
+        android:text="   ----"
+        android:textSize="24sp" />
+
+</RelativeLayout>
